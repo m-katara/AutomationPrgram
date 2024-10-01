@@ -1,5 +1,6 @@
 package Inheritance;
-class Parent_Class
+
+class Parents_Class
 {
 	void login()
 	{
@@ -7,16 +8,17 @@ class Parent_Class
 	}
 }
 
-public class MethoOveriding extends Parent_Class
+public class MethoOveridingSuperKey extends Parents_Class
 {
 	void login()
 	{
 		System.out.println("Login with mob number");
+		super.login();
 	}
 
 	public static void main(String[] args) 
 	{
-		MethoOveriding m1 = new MethoOveriding();
+		MethoOveridingSuperKey m1 = new MethoOveridingSuperKey();
 		m1.login();
 
 	}
